@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BACKYARD ULTRA ABIDJAN — Accueil</title>
+  <!-- Bootstrap 5 CDN -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="f1ff922e-295b-49ad-bebc-51eb7b3613b9.jpg" alt="logo" class="rounded-circle" width="60" height="60">
+          <span class="fw-bold">BACKYARD ULTRA ABIDJAN</span>
+        </a>
+
+        <!-- Bouton menu mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Ouvrir le menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation principale -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">ACCUEIL</a></li>
+            <li class="nav-item"><a class="nav-link" href="concept.html">CONCEPT</a></li>
+            <li class="nav-item"><a class="nav-link" href="inscription.html">INSCRIPTION</a></li>
+            <li class="nav-item"><a class="nav-link" href="resultat.html">RESULTAT</a></li>
+             <div>
+              <li class="nav-item"><a class="nav-link" href="galerie.html">GALERIE</a></li>
+               <li class="nav-item photos">
+              <a class="nav-link" href="galerie.html">PHOTO</a>
+              <ul class="masquer">
+                <li class="nav-item"><a class="nav-link" href="">Edition 2023</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Edition 2024</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Edition 2025</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Edition 2026</a></li>
+              </ul>
+            </li>
+            <li class="nav-item photos">
+              <a class="nav-link" href="galerie.html">VIDEO</a>
+              <ul class="masquer">
+                <li class="nav-item"><a class="nav-link" href="">Edition 2023</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Edition 2024</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Edition 2025</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Edition 2026</a></li>
+              </ul>
+            </li>
+           </div> 
+            <!-- <li class="nav-item"><a class="nav-link" href="galerie.html">GALERIE</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="boutique.html">BOUTIQUE</a></li>
+            <li class="nav-item"><a class="nav-link" href="partenaire.html">PARTENAIRES</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Variables de couleur */
+        :root {
+            --primary-color: #ff5722; /* Orange vif */
+            --secondary-color: #212121; /* Gris foncé */
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        /* --- NAVBAR CUSTOM --- */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 20; 
+        }
+        .navbar-brand, .nav-link {
+            font-weight: 700;
+            color: white !important;
+        }
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        /* --- SECTION CARROUSEL & BANNER --- */
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 120vh;
+            overflow: hidden;
+            margin-top: -56px; 
+        }
+
+        #carouselExampleCaptions, 
+        .carousel-inner, 
+        .carousel-item {
+            height: 100%;
+        }
+
+        .carousel-item img {
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.9);
+        }
+        
+        /* BANDEAU D'ACTUALITÉ SUPERPOSÉ */
+        .news-banner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 1100px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            z-index: 10;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+        }
+
+        .news-banner h1 {
+            color: var(--primary-color);
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .news-info-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .news-info-list li {
+            font-size: 1.1em;
+            font-weight: 700;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        /* --- SECTION RECORDS --- */
+        .records-section {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: var(--light-bg);
+        }
+
+        .records-section h2 {
+            color: var(--secondary-color);
+            font-weight: 900;
+            margin-bottom: 40px;
+        }
+
+        .record-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            height: 100%;
+        }
+
+        .record-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .record-card h3 {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        /* --- SECTION ACTIONS (Boutons et Liens) --- */
+        .action-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .register-button {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 15px 40px;
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .register-button:hover {
+            background-color: #e64a19;
+            border-color: #e64a19;
+            transform: scale(1.05);
+        }
+        
+        /* Style pour les liens supplémentaires sous le bouton d'inscription */
+        .additional-links {
+            margin-top: 25px;
+        }
+        .additional-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1em;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        .additional-links a:hover {
+            color: white;
+            background-color: var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+             .hero-section {
+                margin-top: 0; 
+            }
+            .additional-links {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+             .additional-links a {
+                 margin: 0;
+             }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">🏆 BYUA 2026</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#records">Records</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+    
+    <div class="hero-section" id="home">
+        
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/home/cover3.jpg" class="d-block w-100" alt="Ligne de départ">
+                </div>
+                <div class="carousel-item active">
+                    <img src="images/60670b0a_original.jpg" class="d-block w-100" alt="Ligne de départ">
+                </div>
+                <div class="carousel-item active">
+                    <img src="images/home/cover5.jpg" class="d-block w-100" alt="Ligne de départ">
+                </div>
+                <div class="carousel-item active">
+                    <img src="images/home/cover9.jpg" class="d-block w-100" alt="Ligne de départ">
+                </div>
+                <div class="carousel-item active">
+                    <img src="images/home/cover4.jpg" class="d-block w-100" alt="Ligne de départ">
+                </div>
+                <div class="carousel-item active">
+                    <img src="images/home/cover8.jpg" class="d-block w-100" alt="Ligne de départ">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/home/cover1.jpg" class="d-block w-100" alt="Paysage du complexe O'Bord">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/home/cover7.jpg" class="d-block w-100" alt="Équipe de soutien">
+                </div>
+                <div class="carousel-item">
+                    <img src="d22e8961-2475-4042-af97-1299fb267251.jpg" class="d-block w-100" alt="Équipe de soutien">
+                </div>
+                <div class="carousel-item">
+                    <img src="2acece4a-47b4-4dd3-bd65-f9241f971d64.jpg" class="d-block w-100" alt="Équipe de soutien">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+
+        <div class="news-banner">
+            <h1>BACKYARD ULTRA ABIDJAN</h1>
+            <ul class="news-info-list">
+                <li><span class="fw-bold">DATE :</span> 23 > 24 mai 2026</li>
+                <li><span class="fw-bold">LIEU :</span> COMPLEXE HOTELIER O'BORD</li>
+                <li><span class="fw-bold">PARTICIPANTS :</span> 200</li>
+                <li><span class="fw-bold">ASSISTANTS/SUPPORTEURS :</span> +300</li>
+                <li><span class="fw-bold">SOUTIEN :</span> Assistance Médicale & Kinés</li>
+                <li><span class="fw-bold">VOLONTARIAT :</span> +40 BÉNÉVOLES</li>
+                <li><span class="fw-bold">LOGISTIQUE :</span> Zone de Ravitaillement</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="action-section">
+        
+        <a href="inscription.html" class="btn btn-primary register-button shadow-lg">
+            INSCRIPTION OFFICIELLE 2026
+        </a>
+    </div>
+
+    <div class="records-section" id="records">
+        <div class="container">
+            <h2>🥇 RECORDS & PALMARÈS DE LA BACKYARD ULTRA</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="record-card">
+                        <h3>Record Mondial (Big's)</h3>
+                        <p class="fs-4 fw-bold text-success">108 tours (724.2 km)</p>
+                        <p>Harvey Lewis (USA), 2023</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="record-card">
+                        <h3>Record Africain</h3>
+                        <p class="fs-4 fw-bold text-success">52 tours (348.4 km)</p>
+                        <p>Nom du Coureur (Pays), Année (Exemple)</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="record-card">
+                        <h3>Record Abidjan (Première Édition)</h3>
+                        <p class="fs-4 fw-bold text-success">XX tours (XX km)</p>
+                        <p>Record à établir en 2026 !</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="record-card">
+                        <h3>Last Man/Woman Standing</h3>
+                        <p class="fs-4 fw-bold text-success">Le plus grand nombre de tours</p>
+                        <p>L'objectif ultime à Abidjan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="action-section">
+        
+        
+        
+        <div class="additional-links">
+            <a href="URL_REGLEMENT">Règlement de la course</a>
+            &bull;
+            <a href="URL_PARTENAIRES">Nos Partenaires</a>
+            &bull;
+            <a href="URL_CONTACT">Contactez-nous</a>
+            &bull;
+            <a href="URL_FAQ">FAQ</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var myCarousel = document.querySelector('#carouselExampleCaptions')
+            var carousel = new bootstrap.Carousel(myCarousel, {
+                interval: 3000,
+                ride: 'carousel'
+            })
+        });
+    </script>
+
+  <!-- <section id="hero" class="cover2" style="min-height: 80vh; background-size: contain; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <div class="d-flex flex-column align-items-center justify-content-center p-4" style="background: rgba(0, 0, 0, 0.5); width: 380px;">
+      <div style="background-color: rgb(24, 216, 47); text-align: center; padding: 0 20px; width: 100%; border-radius: 5px 5px 0 0;">
+        <h5 style="color: white;margin-bottom: 10px;">BACKYARD ULTRA ABIDJAN</h5>
+        <p style="background-color: black; padding: 2px 5px; color: rgb(24, 216, 47); display: inline-block; width: fit-content;">23>24 mai 2026</p>
+      </div>
+      <div style="background-image: url(images/12d5982e-cc46-4276-bcf9-c0fea6072f8a.jpeg);background-size: cover; width: 100%; text-align: center;">
+        <p style="background-color: black; margin-top: 10px; padding: 2px; color: rgb(255, 255, 255); display: inline-block; width: fit-content; padding: 2px 5px; margin-bottom: 5px;">COMPLEXE HOTELIER O'BORD</p>
+        <div style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 5px;">
+          <div style="padding: 2px; background-color: rgba(0, 0, 0, 0.6); border-radius: 5px;">
+            <p style="color: rgb(24, 216, 47); text-align: center; font-weight: bold; font-size: 12px;">200 <br> PARTICIPANTS</p>
+          </div>
+          <div style="padding: 2px; background-color: rgba(0, 0, 0, 0.4);  border-radius: 5px;">
+            <p style="color: rgb(24, 216, 47); text-align: center; font-weight: bold; font-size: 12px;">+300 <br> ASSISTANTS/ <br> SUPPORTEURS</p>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 5px;">
+          <div style="padding: 2px; background-color: rgba(0, 0, 0, 0.6); border-radius: 5px;">
+            <p style="color: rgb(24, 216, 47); text-align: center; font-weight: bold; font-size: 12px;">+40 <br> BÉNÉVOLES</p>
+          </div>
+          <div style="padding: 2px; background-color: rgba(0, 0, 0, 0.4);  border-radius: 5px;">
+            <p style="color: rgb(24, 216, 47); text-align: center; font-weight: bold; font-size: 12px;">UNE <br> ASSISTANCE <br> MÉDICALE</p>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 5px;">
+          <div style="padding: 2px; background-color: rgba(0, 0, 0, 0.6); border-radius: 5px;">
+            <p style="color: rgb(24, 216, 47); text-align: center; font-weight: bold; font-size: 12px;">UNE <br> ÉQUIPE DE KINÉS</p>
+          </div>
+          <div style="padding: 2px; background-color: rgba(0, 0, 0, 0.4);  border-radius: 5px;">
+            <p style="color: rgb(24, 216, 47); text-align: center; font-weight: bold; font-size: 12px;">UNE ZONE <br> DE RAVITAILLEMENT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a id="inscription" href="inscription.html" style="text-decoration: none; color: white; font-size: 30px; font-weight: bold; padding: 10px 35px; background: rgb(239, 150, 26); margin-top: 10px; border-radius: 35px;">Inscription</a>
+  </section> -->
+
+  <!-- <section class="hero-slider container" aria-label="slider">
+    <div class="slider-wrap">
+      <div class="slide-inner">
+          <h2>Bienvenue au BACKYARD ULTRA ABIDJAN</h2>
+          <p>Suivez nos compétitions, résultats et galeries.</p>
+          <a class="btn" href="actualite.html">Voir les actualités</a>
+        </div>
+      <div class="slide active" style="background-image:url('d22e8961-2475-4042-af97-1299fb267251.jpg')">
+      </div>
+      <div class="slide-inner">
+          <h2>Bienvenue au BACKYARD ULTRA ABIDJAN</h2>
+          <p>Suivez nos compétitions, résultats et galeries.</p>
+          <a class="btn" href="actualite.html">Voir les actualités</a>
+      </div>
+      <div class="slide" style="background-image:url('2d8a5af5-74cb-4401-a75d-7e4788d02a1b.jpg')">
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="prev">◀</button>
+      <button class="next">▶</button>
+    </div>
+  </section> -->
+
+  <!-- <main class="container">
+    <section class="features">
+      <article>
+        <h3>Compétitions</h3>
+        <p>Retrouvez les détails des compétitions et classements.</p>
+        <a href="competition.html">Voir</a>
+      </article>
+      <article>
+        <h3>Résultats en direct</h3>
+        <p>Mises à jour en temps réel après chaque épreuve.</p>
+        <a href="resultat.html">Voir</a>
+      </article>
+      <article>
+        <h3>Galeries</h3>
+        <p>Photos et vidéos classées par compétition.</p>
+        <a href="photos.html">Voir</a>
+      </article>
+    </section>
+
+    <section class="stats">
+      <div class="stat">
+        <h4 class="counter" data-target="150">0</h4>
+        <p>Compétitions</p>
+      </div>
+      <div class="stat">
+        <h4 class="counter" data-target="1200">0</h4>
+        <p>Participants</p>
+      </div>
+      <div class="stat">
+        <h4 class="counter" data-target="85">0</h4>
+        <p>Podiums</p>
+      </div>
+    </section>
+
+    <section class="latest-news">
+      <h3>Dernières actualités</h3>
+      <div class="news-grid">
+        <article class="card">
+          <img src="2acece4a-47b4-4dd3-bd65-f9241f971d64.jpg" alt="actualité">
+          <h4>Titre de l'actualité</h4>
+          <p>Résumé court de l'actualité.</p>
+          <a href="actualite.html">Lire</a>
+        </article>
+        <article class="card">
+          <img src="images/photo2.jpg" alt="actualité">
+          <h4>Interview</h4>
+          <p>Entretien exclusif avec un athlète.</p>
+          <a href="actualite.html">Lire</a>
+        </article>
+      </div>
+    </section>
+  </main> -->
+
+  <!-- <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+      
+        <p>© 2025 BACKYARD ULTRA ABIDJAN</p>
+      </div>
+      <nav>
+        <a href="#">Mentions</a>
+        <a href="#">Confidentialité</a>
+      </nav>
+    </div>
+  </footer> -->
+  <footer>
+   <div class="container">
+    <div class="center">&copy; <span id="year"></span>2025 BackyardUltraAbidjan. Tous droits réservés</div>
+   </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

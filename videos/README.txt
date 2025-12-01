@@ -1,0 +1,1 @@
+Ces fichiers GIF sont des aperçus vidéo génériques. Remplacez-les par vos fichiers .mp4 si vous le souhaitez, et mettez à jour l'attribut data-src dans les boutons .play-video.
