@@ -420,3 +420,647 @@ footer {
     width: 25%;
   }
 }
+.text-white{
+  text-align: center; font-size: 20px; color: green;
+}
+/* ---------------------------------
+   1. STYLES DE BASE ET CENTRAGE
+   --------------------------------- */
+.concept-container {
+  /* Centrage du bloc de contenu sur la page */
+  max-width: 800px; /* Limite la largeur pour une meilleure lisibilité */
+  margin: 50px auto; /* Centre horizontalement et ajoute de l'espace vertical */
+  padding: 40px; /* Espace intérieur */
+  
+  /* Style de base du conteneur */
+  font-family: 'Montserrat', sans-serif; /* Police moderne et lisible */
+  background: #ffffff; /* Fond blanc */
+  border-radius: 15px; /* Bords très arrondis */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  
+  /* Application de l'animation Keyframe à l'ensemble du conteneur */
+  border: 5px solid transparent;
+  animation: cadre-lumineux 5s infinite linear;
+}
+
+/* ---------------------------------
+   2. TYPOGRAPHIE ET COULEURS
+   --------------------------------- */
+.concept-container h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #007bff; /* Bleu éclatant pour le titre */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #007bff; /* Ligne de séparation sous le titre */
+}
+
+.concept-container p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+/* ---------------------------------
+   3. STYLES DE LA LISTE
+   --------------------------------- */
+.concept-container ul {
+  list-style: none; /* Supprime les puces par défaut */
+  padding: 0;
+  margin: 0;
+}
+
+.concept-container li {
+  background-color: #e9f7ff; /* Arrière-plan bleu très clair pour chaque élément */
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Effet au survol (hover) pour l'interactivité */
+.concept-container li:hover {
+  transform: translateY(-3px); /* Soulève légèrement l'élément */
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+}
+
+.concept-container li strong {
+  color: #28a745; /* Vert vif pour mettre en valeur les points clés */
+  font-weight: 700;
+}
+
+/* ---------------------------------
+   4. KEYFRAME (Animation pour le Cadre)
+   --------------------------------- */
+@keyframes cadre-lumineux {
+  0% {
+    border-color: #007bff; /* Bleu course */
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+  }
+  25% {
+    border-color: #28a745; /* Vert nature */
+    box-shadow: 0 0 25px rgba(40, 167, 69, 0.8);
+  }
+  50% {
+    border-color: #ffc107; /* Jaune énergie */
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.8);
+  }
+  75% {
+    border-color: #dc3545; /* Rouge défi */
+    box-shadow: 0 0 25px rgba(220, 53, 69, 0.8);
+  }
+  100% {
+    border-color: #007bff;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+  }
+}
+/* CONTAINER PRINCIPAL */
+.expectations-container {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ffcc33, #ff8800);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* TITRE PRINCIPAL */
+.expectations-container h2 {
+    color: white;
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    animation: slideDown 1.2s ease-out;
+}
+
+/* LISTE PRINCIPALE */
+.expectations-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ELEMENTS */
+.list-item {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform .3s, box-shadow .3s;
+    animation: slideUp 1s ease-out;
+}
+
+/* ANIMATION SURVOL */
+.list-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* TITRE DE CHAQUE LISTE */
+.list-item h3 {
+    color: #ff8800;
+    margin-bottom: 10px;
+}
+
+/* SOUS-LISTES */
+.sub-list {
+    margin-top: 10px;
+    text-align: left;
+    list-style: disc;
+    padding-left: 30px;
+    color: #444;
+}
+
+/* ANIMATIONS KEYFRAMES */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* SECTION PRINCIPALE */
+.sponsor-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(4px);
+
+    border-radius: 20px;
+    border: 2px solid #ff8800;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+
+    background-image: url("f1ff922e-295b-49ad-bebc-51eb7b3613b9.jpg");
+    background-size: cover;
+    background-position: center;
+
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* TITRE */
+.sponsor-section h1 {
+    font-size: 2.4rem;
+    color: #ff8800;
+    margin-bottom: 20px;
+    animation: slideDown 1s ease-out;
+}
+
+/* PARAGRAPHE */
+.sponsor-section p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    animation: slideUp 1.2s ease-out;
+}
+
+/* PARTENAIRES */
+.sponsor-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #222;
+    animation: zoomIn 1.3s ease-in-out;
+}
+
+/* IMAGE PARTENAIRE */
+.partner-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #ff8800;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: fadeIn 2s ease-in-out;
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.partner-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.7); }
+    to { opacity: 1; transform: scale(1); }
+}
+/* CONTENEUR DE L’IMAGE — CENTRAGE PARFAIT */
+.partner-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* IMAGE PARTENAIRE */
+.partner-image img {
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #ff8800;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: fadeIn 2s ease-in-out;
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.partner-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+.contact-card {
+            width: 100%;
+            max-width: 900px;
+            padding: 40px 30px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Encadrement élégant */
+            border: 2px solid #1a73e8; /* Bordure thématique */
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards; /* Animation d'apparition */
+        }
+
+        /* -------------------------------------- */
+        /* 2. TYPOGRAPHIE ET ENTÊTES              */
+        /* -------------------------------------- */
+        .title {
+            color: #1a73e8;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            text-align: center;
+            color: #555;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            padding: 0 15px;
+        }
+        
+        .subheader {
+            color: #74a84a; /* Couleur verte pour les sous-titres */
+            font-size: 1.4em;
+            text-align: center;
+            margin: 20px 0 25px 0;
+            text-transform: uppercase;
+        }
+
+        .separator {
+            border: none;
+            height: 1px;
+            background-color: #e0e0e0;
+            margin: 40px auto;
+            width: 50%;
+        }
+
+        /* -------------------------------------- */
+        /* 3. GRILLE DE CONTACTS & ANIMATION      */
+        /* -------------------------------------- */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* 2 colonnes sur grand écran, 1 sur petit */
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            background-color: #f8faff; /* Arrière-plan des blocs de contact */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 0.5s ease-out forwards; /* Animation en cascade */
+        }
+
+        /* Décalage temporel pour l'animation */
+        .item-1 { animation-delay: 0.2s; }
+        .item-2 { animation-delay: 0.4s; }
+        .item-3 { animation-delay: 0.6s; }
+        .item-4 { animation-delay: 0.8s; }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .icon-wrap {
+            margin-right: 15px;
+            font-size: 1.5em;
+            color: #1a73e8; /* Couleur principale des icônes */
+            min-width: 40px; /* Assure que le texte s'aligne */
+            text-align: center;
+        }
+
+        .contact-title {
+            font-size: 0.9em;
+            color: #74a84a; /* Sous-titre en vert */
+            margin: 0 0 3px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-detail {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+            word-break: break-word; /* Gestion des longs numéros de téléphone */
+        }
+
+        /* -------------------------------------- */
+        /* 4. KEYFRAMES ET ICONES SOCIALES        */
+        /* -------------------------------------- */
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .social-link {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: #1a73e8;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 1.5em;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            background-color: #74a84a; /* Changement de couleur au survol */
+            transform: scale(1.1) rotate(5deg); /* Petit effet de rotation/zoom */
+            box-shadow: 0 0 15px rgba(116, 168, 74, 0.5);
+        }
+
+        /* Styles spécifiques pour WhatsApp pour rester dans la charte */
+         .social-link:nth-child(5) {
+            background-color: #25D366; 
+        }
+        .social-link:nth-child(4){
+          background-color: #000;
+        }
+        /* Rendre le conteneur responsif sur mobile */
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+     /* -------------------------------------- */
+/* KEYFRAMES (Animations)                 */
+/* -------------------------------------- */
+
+/* 1. Animation d'apparition pour le bloc principal */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px);
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
+
+/* 2. Animation d'apparition en cascade pour les éléments de contact */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* -------------------------------------- */
+/* STYLES GÉNÉRAUX & CENTRAGE             */
+/* -------------------------------------- */
+ .contact-section{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Arrière-plan doux */
+    
+    /* CENTRAGE PARFAIT AVEC FLEXBOX */
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center;     /* Centrage vertical */
+    min-height: 100vh;
+    
+    margin: 0;
+    padding: 30px;
+    overflow-x: hidden;
+}
+
+.contact-card {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px 30px;
+    background: #ffffff;
+    
+    /* ENCADREMENT ET OMBRE */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); 
+    border: 2px solid #1a73e8; /* Bordure thématique (Bleu) */
+    
+    /* APPLICATION DES ANIMATIONS */
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards; 
+}
+
+/* -------------------------------------- */
+/* TYPOGRAPHIE ET MISE EN PAGE            */
+/* -------------------------------------- */
+.title {
+    color: #1a73e8; 
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.description {
+    text-align: center;
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.subheader {
+    color: #74a84a; /* Sous-titre en Vert/Olive */
+    font-size: 1.4em;
+    text-align: center;
+    margin: 20px 0 25px 0;
+    text-transform: uppercase;
+}
+
+.separator {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 40px auto;
+    width: 50%;
+}
+
+/* -------------------------------------- */
+/* GRILLE DE CONTACTS (Disposition)       */
+/* -------------------------------------- */
+.contact-grid {
+    /* Utilisation de CSS Grid pour une disposition propre */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    background-color: #f8faff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    
+    /* Préparation et application de l'animation en cascade */
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Décalage temporel pour l'effet cascade */
+.item-1 { animation-delay: 0.2s; }
+.item-2 { animation-delay: 0.4s; }
+.item-3 { animation-delay: 0.6s; }
+.item-4 { animation-delay: 0.8s; }
+
+.contact-item:hover {
+    transform: translateY(-5px); /* Léger déplacement au survol */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrap {
+    margin-right: 15px;
+    font-size: 1.5em;
+    color: #1a73e8;
+    min-width: 40px; 
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 0.9em;
+    color: #74a84a;
+    margin: 0 0 3px 0;
+    text-transform: uppercase;
+}
+
+.contact-detail {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* -------------------------------------- */
+/* ICONES SOCIALES                        */
+/* -------------------------------------- */
+.social-icons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #1a73e8;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background-color: #74a84a; 
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 15px rgba(116, 168, 74, 0.5);
+}
+
+/* Couleurs spécifiques pour les réseaux sociaux (si vous voulez) */
+.social-link.facebook { background-color: #3b5998; }
+.social-link.youtube { background-color: #c4302b; }
+.social-link.instagram { background-color: #e95950; }
+.social-link.whatsapp { background-color: #25D366; }
+
+/* -------------------------------------- */
+/* RESPONSIVITÉ                           */
+/* -------------------------------------- */
+@media (max-width: 768px) {
+    .contact-card {
+        padding: 30px 20px;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+    }
+    .social-link {
+        margin: 5px; /* Moins d'espace entre les icônes sur mobile */
+    }
+}   
