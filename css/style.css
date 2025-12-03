@@ -440,7 +440,7 @@ footer {
   font-family: 'Montserrat', sans-serif; /* Police moderne et lisible */
   background: #ffffff; /* Fond blanc */
   border-radius: 15px; /* Bords très arrondis */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  box-shadow: 0 10px 30px rgba(32, 78, 96, 0.1); /* Ombre douce */
   
   /* Application de l'animation Keyframe à l'ensemble du conteneur */
   border: 5px solid transparent;
@@ -513,12 +513,12 @@ footer {
     box-shadow: 0 0 25px rgba(40, 167, 69, 0.8);
   }
   50% {
-    border-color: #ffc107; /* Jaune énergie */
+    border-color: #4d07ff; /* Jaune énergie */
     box-shadow: 0 0 20px rgba(7, 255, 52, 0.705);
   }
   75% {
-    border-color: #dc3545; /* Rouge défi */
-    box-shadow: 0 0 25px rgba(220, 53, 69, 0.8);
+    border-color: #363592; /* Rouge défi */
+    box-shadow: 0 0 25px rgba(71, 49, 179, 0.8);
   }
   100% {
     border-color: #007bff;
